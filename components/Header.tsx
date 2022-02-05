@@ -6,16 +6,18 @@ const Header = () => {
 		<Head>
 			<title>Frontend Mentor | Space tourism website</title>
 			<link rel="icon" href="/favicon-32x32.png" />
+
+			{/* Fonts */}
 			<link
 				href="https://fonts.googleapis.com/css?family=Bellefair:regular"
 				rel="stylesheet"
 			/>
 			<link
-				href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+				href="https://fonts.googleapis.com/css?family=Barlow+Condensed:regular"
 				rel="stylesheet"
 			/>
 			<link
-				href="https://fonts.googleapis.com/css?family=Barlow:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+				href="https://fonts.googleapis.com/css?family=Barlow:regular"
 				rel="stylesheet"
 			/>
 		</Head>

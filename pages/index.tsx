@@ -13,7 +13,7 @@ export default function Home() {
 			{/* TODO: make sure to make component classes */}
 			{/* TODO: make sure to make micro github commit */}
 			<main>
-				So, you want to travel to <br />
+				<h1 className="text-heading font-serif">So, you want to travel to </h1>
 				Space <br />
 				Let’s face it; if you want to go to space, you might as well genuinely
 				go to outer space and not hover kind of on the edge of it. Well sit

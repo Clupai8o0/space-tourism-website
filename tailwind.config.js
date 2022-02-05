@@ -7,52 +7,24 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				serif: ["Bellefair", "serif"],
+				"condensed-sans": ["Barlow Condensed Regular", "sans-serif"],
+				sans: ["Barlow", "sans-serif"],
 			},
-			text: {
-				"heading-1": {
-					fontSize: "150px",
-					fontWeight: "regular",
-				},
-				"heading-2": {
-					fontSize: "100px",
-					fontWeight: "regular",
-				},
-				"heading-3": {
-					fontSize: "56px",
-					fontWeight: "regular",
-				},
-				"heading-4": {
-					fontSize: "32px",
-					fontWeight: "regular",
-				},
-				"heading-5": {
-					fontSize: "28px",
-					fontWeight: "regular",
-					letterSpacing: "4.75px",
-					fontFamily: ["Barlow Condensed Regular", "sans-serif"],
-				},
-				"subheading-1": {
-					fontSize: "28px",
-					fontWeight: "regular",
-				},
-				"subheading-2": {
-					fontSize: "14px",
-					fontWeight: "regular",
-					letterSpacing: "2.35px",
-					fontFamily: ["Barlow Condensed Regular", "sans-serif"],
-				},
-				nav: {
-					fontSize: "16px",
-					fontWeight: "regular",
-					letterSpacing: "2.7px",
-					fontFamily: ["Barlow Condensed Regular", "sans-serif"],
-				},
-        body: {
-          fontSize: "18px",
-          fontWeight: "regular",
-          lineHeight: "32px",
-          fontFamily: ["Barlow", 'sans-serif']
-        }
+			letterSpacing: {
+				"heading-5": "4.75px",
+				"subheading-2": "2.35px",
+				nav: "2.7px",
+			},
+			fontSize: {
+				"heading-1": "150px",
+				"heading-2": "100px",
+				"heading-3": "56px",
+				"heading-4": "32px",
+				"heading-5": "28px",
+				"subheading-1": "28px",
+				"subheading-2": "14px",
+				nav: "16px",
+				body: "18px",
 			},
 		},
 	},

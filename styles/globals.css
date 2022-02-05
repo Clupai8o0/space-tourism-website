@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	/* Fonts */
+	.heading-1 {
+		@apply text-heading-1;
+	}
+	.heading-2 {
+		@apply text-heading-2;
+	}
+	.heading-3 {
+		@apply text-heading-3;
+	}
+	.heading-4 {
+		@apply text-heading-4;
+	}
+	.heading-5 {
+		@apply text-heading-5 font-condensed-sans tracking-heading-5;
+	}
+
+	.subheading-1 {
+		@apply text-subheading-1;
+	}
+	.subheading-2 {
+		@apply text-subheading-2 tracking-subheading-2 font-condensed-sans;
+	}
+  
+	.nav-link {
+		@apply text-nav tracking-nav font-condensed-sans;
+	}
+	.body {
+		@apply text-body font-sans;
+	}
+}
