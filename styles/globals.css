@@ -3,34 +3,66 @@
 @tailwind utilities;
 
 @layer components {
-	/* Fonts */
-	.heading-1 {
-		@apply text-heading-1;
+	/** Font classes */
+	h1 {
+		@apply sm:text-heading-1 font-serif text-[80px] uppercase text-white sm:leading-[180px] lg:leading-[200px];
 	}
-	.heading-2 {
-		@apply text-heading-2;
+	h2 {
+		@apply text-heading-2 font-serif;
 	}
-	.heading-3 {
-		@apply text-heading-3;
+	h3 {
+		@apply lg:text-heading-3 font-serif text-2xl uppercase sm:text-[40px];
 	}
-	.heading-4 {
-		@apply text-heading-4;
+	h4 {
+		@apply sm:text-heading-4 font-serif text-[20px] uppercase tracking-[1.25px];
 	}
-	.heading-5 {
-		@apply text-heading-5 font-condensed-sans tracking-heading-5;
+	h5 {
+		@apply lg:text-heading-5 font-condensed-sans lg:tracking-heading-5 text-[16px] uppercase tracking-[2.7px] md:text-xl md:tracking-[3.38px];
 	}
-
 	.subheading-1 {
 		@apply text-subheading-1;
 	}
 	.subheading-2 {
-		@apply text-subheading-2 tracking-subheading-2 font-condensed-sans;
+		@apply text-subheading-2 tracking-subheading-2 font-condensed-sans font-normal uppercase text-[#D0D6F9] sm:text-base;
 	}
-  
+	p {
+		@apply sm:text-body font-sans text-[15px] leading-[25px] sm:leading-8;
+	}
+
+	/** Container classes */
+	div.container {
+		@apply relative flex min-h-screen min-w-full flex-col items-center bg-[#0B0D17] font-sans text-[#D0D6F9];
+	}
+	main.container {
+		@apply z-5 relative w-full max-w-[1440px] text-center
+	}
+	.glassmorphism {
+		@apply firefox:bg-opacity-100 bg-gray-900 bg-opacity-0 backdrop-blur-xl;
+	}
+
+	/** Nav-classes */
 	.nav-link {
-		@apply text-nav tracking-nav font-condensed-sans;
+		@apply font-condensed-sans relative cursor-pointer text-base uppercase tracking-[2.7px] text-white opacity-80 transition-opacity duration-200 ease-in-out hover:opacity-100 focus:outline-dashed focus:outline-2 focus:outline-blue-400 active:opacity-100;
 	}
-	.body {
-		@apply text-body font-sans;
+	.nav-hr {
+		@apply absolute -bottom-10 w-full border-t-[3px] border-white opacity-0 transition-all duration-200 ease-in-out group-hover:opacity-100 group-focus:opacity-60 group-active:opacity-100;
 	}
+	.nav-link-technology {
+		@apply flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-white border-opacity-20 font-serif transition-all duration-200 ease-in-out hover:border-opacity-100 focus:border-opacity-60 sm:text-2xl md:h-16 md:w-16;
+	}
+	.nav-link-crew {
+		@apply flex h-3 w-3 cursor-pointer rounded-full bg-white transition-all duration-200 ease-in-out hover:opacity-60 active:opacity-100;
+	}
+
+	/** Img classes */
+	.bg-container {
+		@apply absolute top-0 left-0 z-0 h-full w-full;
+	}
+}
+
+.shadow-hard:hover {
+	box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.1);
+}
+.shadow-hard:active {
+	box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.1);
 }
